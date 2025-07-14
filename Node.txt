@@ -1,0 +1,27 @@
+1. Google font use systems : ---------------------------------------------
+<!-- google font ----------------------------------------------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    
+<!-- css file up add link --------------------------------->
+
+***=> style.css ---> file add :----------------------------------------
+
+  .open-sans-normal {
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  }
+
+***=> index.html -->  body --->   <body class="open-sans-normal">
+
+2. li, a, button ----------------------------------------------------------------------
+<li> <a href="#"> <button class="btn-primary"> Hire Me </button> </a> </li>
+
+3. background image url position------------------------------------------------------------
+    .header {
+      background-image: url(../images/developer.png), url(../images/header_bg.png);
+      background-repeat: no-repeat;
+      background-position: top left, bottom right;
+    }
+
+4. 
