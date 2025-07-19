@@ -132,7 +132,7 @@ nav li a {
 }
 
 /* A summary of My Resume */
-.sectoin-container {
+.resume-container {
   display: flex;
   gap: 71px;
 }
@@ -179,4 +179,68 @@ footer textarea {
   display: block;
   padding: 5px 20px;
   margin: 24px 0px;
+}
+
+/* Resposive media query all device------------------*/
+.hide {
+  display: none;
+}
+
+@media screen and (max-width: 576px) {
+  /* skills--------------------------------------*/
+  .skills-container,
+  .resume-container,
+  .about-items,
+  .banner,
+  nav,
+  nav > ul,
+  footer {
+    flex-direction: column;
+    gap: 14px;
+  }
+  footer,
+  .about {
+    padding: 20px;
+  }
+  .footer-coloum {
+    width: 100%;
+  }
+  footer input[type="text"],
+  footer input[type="email"],
+  footer textarea {
+    width: calc(100% - 40px);
+  }
+  /* about---------------------*/
+  .about {
+    margin: 20px;
+  }
+  /* banner-------------------*/
+  .banner {
+    margin: 0 auto;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  /* header-------------------*/
+  .header {
+    background-image: none;
+    background-color: #ffffff;
+  }
+  nav ul {
+    text-align: center;
+    margin: 20px, auto;
+    padding: 0%;
+    gap: 10px;
+  }
+  nav ul li {
+    margin-left: 0px;
+  }
+  nav {
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+  .btn-primary {
+    margin-top: 10px;
+  }
 }
