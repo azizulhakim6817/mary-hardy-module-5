@@ -104,7 +104,7 @@ nav li a {
 /*  About style-----------------------*/
 .about {
   border-radius: 10px;
-  margin: 100px 100px;
+  margin: 100px 20px;
   padding: 57px 101px;
   text-align: center;
 }
@@ -242,5 +242,97 @@ footer textarea {
   }
   .btn-primary {
     margin-top: 10px;
+  }
+  .banner-description {
+    margin: 36px 111px;
+  }
+  .banner-greeting {
+    margin: 11px;
+    color: gray;
+    font-weight: 400;
+    font-size: 40px;
+  }
+  .banner-profile-pic {
+    max-width: 400px;
+    max-height: 400px;
+  }
+}
+/* Medium device responsive desing--------------------------------- */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  .about-items,
+  .banner,
+  nav,
+  nav > ul,
+  footer {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .skills-container,
+  .resume-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  footer,
+  .about {
+    padding: 20px;
+  }
+  footer p {
+    text-align: center;
+    margin: 30px 88px;
+  }
+  .footer-coloum {
+    width: 100%;
+    text-align: center;
+  }
+  footer input[type="text"],
+  footer input[type="email"],
+  footer textarea {
+    width: calc(100% - 60px);
+  }
+  /* about---------------------*/
+  .about {
+    margin: 0px;
+    padding: 50px;
+  }
+  /* banner-------------------*/
+  .banner {
+    margin: 0 auto;
+  }
+  .banner-profile-pic {
+    max-width: 800px;
+    max-height: 700px;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  /* header-------------------*/
+  .header {
+    background-color: #ffffff;
+  }
+  nav ul {
+    text-align: center;
+    margin: 20px, auto;
+    padding: 0%;
+    gap: 10px;
+  }
+  nav ul li {
+    margin-left: 0px;
+  }
+  nav {
+    justify-content: center;
+    align-items: center;
+    margin: 0px;
+  }
+  .btn-primary {
+    margin-top: 10px;
+  }
+  .banner-description {
+    margin: 36px 111px;
+  }
+  .banner-greeting {
+    margin: 11px;
+    color: gray;
+    font-weight: 400;
+    font-size: 40px;
   }
 }
